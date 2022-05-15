@@ -4,6 +4,16 @@ export bezier
 
 Matrix(vv :: AbstractVector{T}) where T <: AbstractVector = mapreduce(permutedims, vcat, vv)
 transpose(vv :: AbstractVector{T}) where T <: AbstractVector = vv |> Matrix |> eachcol |> collect
+function rowtocolumn(vec::AbstractVector{T}) where T <: AbstractVector
+    dim1 = length(vec)
+    dim2 = length(vec[1])
+    vects = Vector{Vector}(undef, dim2)
+    map(x -> vects[x] = Array{eltype(vec[1])}(undef, dim1), 1:dim2)
+    @inbounds @fastmath for i in 1:dim1, j in 1:dim2
+        vects[j][i] = vec[i][j]
+    end
+    return vects
+end
 
 # actual calculation for quadratic
 bezier(p0 :: Vector, p1 :: Vector, p2 :: Vector, t :: Real) =
@@ -17,18 +27,18 @@ bezier(p0 :: Vector, p1 :: Vector, p2 :: Vector, p3 :: Vector, t :: Real) =
 # it can be used for plotting like this:
 #   plot(bezier([0,0],[1,0],[1,1])...)
 function bezier(p0 :: Vector, p1 :: Vector, p2 :: Vector; range = 0:0.01:1)
-	map(t -> bezier(p0,p1,p2,t), range) |> transpose
+	map(t -> bezier(p0,p1,p2,t), range) |> rowtocolumn
 end
 
 function bezier(p0 :: Vector, p1 :: Vector, p2 :: Vector, p3 :: Vector; range = 0:0.01:1)
-	map(t -> bezier(p0,p1,p2,p3,t), range) |> transpose
+	map(t -> bezier(p0,p1,p2,p3,t), range) |> rowtocolumn
 end
 
 # accepts two lists of x and y values.
 # The following produces the same result as the example above:
 #   plot(bezier([0,1,1],[0,0,1])...)
 function bezier(r1 :: Vector, r2 :: Vector; range = 0:0.01:1)
-	bezier(([r1, r2] |> transpose)..., range = range)
+	bezier(([r1, r2] |> rowtocolumn)..., range = range)
 end
 
 end # module
