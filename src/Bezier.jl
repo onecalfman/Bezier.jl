@@ -27,6 +27,6 @@ bezier(p0 :: Vector, p1 :: Vector, p2 :: Vector, p3 :: Vector; range = 0:0.01:1)
 # accepts two lists of x and y values.
 # The following produces the same result as the example above:
 #   plot(bezier([0,1,1],[0,0,1])...)
-function bezier(r1 :: Vector, r2 :: Vector; range = 0:0.01:1) = bezier(([r1, r2] |> rowtocolumn)..., range = range)
+bezier(r1 :: Vector, r2 :: Vector; range = 0:0.01:1) = bezier(([r1, r2] |> rowtocolumn)..., range = range)
 
 end # module
