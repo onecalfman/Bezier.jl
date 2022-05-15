@@ -2,17 +2,8 @@ module Bezier
 
 export bezier
 
-# https://stackoverflow.com/questions/63892334/using-broadcasting-julia-for-converting-vector-of-vectors-to-matrices
-function transpose(vecvec::AbstractVector{T}) where T <: AbstractVector
-    dim1 = length(vec)
-    dim2 = length(vec[1])
-    vects = Vector{Vector}(undef, dim2)
-    map(x -> vects[x] = Array{eltype(vec[1])}(undef, dim1), 1:dim2)
-    @inbounds @fastmath for i in 1:dim1, j in 1:dim2
-        vects[j][i] = vec[i][j]
-    end
-    return vects
-end
+Matrix(vv :: AbstractVector{T}) where T <: AbstractVector = mapreduce(permutedims, vcat, vv)
+transpose(vv :: AbstractVector{T}) where T <: AbstractVector = vv |> Matrix |> eachcol |> collect
 
 # actual calculation for quadratic
 bezier(p0 :: Vector, p1 :: Vector, p2 :: Vector, t :: Real) =
