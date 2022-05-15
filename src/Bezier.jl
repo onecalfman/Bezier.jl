@@ -4,13 +4,14 @@ export bezier
 
 # https://stackoverflow.com/questions/63892334/using-broadcasting-julia-for-converting-vector-of-vectors-to-matrices
 function transpose(vecvec::AbstractVector{T}) where T <: AbstractVector
-    dim1 = length(vecvec)
-    dim2 = length(vecvec[1])
-    my_array = Array{eltype(vecvec[1]), 2}(undef, dim1, dim2)
+    dim1 = length(vec)
+    dim2 = length(vec[1])
+    vects = Vector{Vector}(undef, dim2)
+    map(x -> vects[x] = Array{eltype(vec[1])}(undef, dim1), 1:dim2)
     @inbounds @fastmath for i in 1:dim1, j in 1:dim2
-        my_array[i,j] = vecvec[i][j]
+        vects[j][i] = vec[i][j]
     end
-    return my_array
+    return vects
 end
 
 # actual calculation for quadratic
