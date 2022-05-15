@@ -2,8 +2,7 @@ module Bezier
 
 export bezier
 
-Matrix(vv :: AbstractVector{T}) where T <: AbstractVector = mapreduce(permutedims, vcat, vv)
-transpose(vv :: AbstractVector{T}) where T <: AbstractVector = vv |> Matrix |> eachcol |> collect
+# https://stackoverflow.com/questions/63892334/using-broadcasting-julia-for-converting-vector-of-vectors-to-matrices
 function rowtocolumn(vec::AbstractVector{T}) where T <: AbstractVector
     dim1 = length(vec)
     dim2 = length(vec[1])
