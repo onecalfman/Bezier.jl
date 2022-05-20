@@ -10,6 +10,8 @@ a buffer overflow occurs in the binomial function.
 
 The degree of the Bezier curve is inferred from the number of control points.
 
+The idea was taken from ["A Primer on Bézier Curves"](https://pomax.github.io/bezierinfo/).
+
 
 ### Examples
 
