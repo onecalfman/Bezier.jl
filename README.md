@@ -36,6 +36,6 @@ The number of coordinates is 100 by default, but can be modified with the range 
 
   plot(bezier([0,0.5,1],[0,1.8,0]))
   plot!(bezier([0,0,1,1],[0,1,-1,0.5]))
-  plot!(bezier([0,0,1,1],[0,1,-1,0.5], range=0:0.2:1))
+  plot!(bezier([0,0,1,1],[0,1,-1,0.5], 0:0.2:1))
 ```
 ![example plot](example.svg)
