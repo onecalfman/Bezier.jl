@@ -11,15 +11,15 @@ bezier(n :: Integer, t :: Float64, w :: AbstractVector{T}) where T <: Real = red
 
 bezier(x :: Vector{T}, range = 0:0.01:1) where T <: Real = map(t -> bernstein((x |> length) - 1, t, x), range)
 
-bezier(x :: Vector{T}, y :: Vector{S}, range = 0:0.01:1) where {T,S <: Number} = (bezier(x, range = range), bezier(y, range = range))
+bezier(x :: Vector{T}, y :: Vector{S}, range = 0:0.01:1) where {T,S <: Number} = (bezier(x, range), bezier(y, range))
 
-bezier(x :: AbstractMatrix{T}, y :: AbstractMatrix{S}, range = 0:0.01:1) where {T,S <: Number} = bezier([x y], range = range)
+bezier(x :: AbstractMatrix{T}, y :: AbstractMatrix{S}, range = 0:0.01:1) where {T,S <: Number} = bezier([x y], range)
 
 function bezier(x :: AbstractMatrix{T}, range = 0:0.01:1) where T <: Number
 	if size(x)[2] == 2
-		bezier(vec(x[1,:]),vec(x[2,:]), range = range)
+		bezier(vec(x[1,:]),vec(x[2,:]), range)
 	elseif size(x)[1] == 2
-		bezier(vec(x[:,]),vec(x[:,2]), range = range)
+		bezier(vec(x[:,1]),vec(x[:,2]), range)
 	else
 		throw(ArgumentError("unsupported matrix dimensions"))
 	end
