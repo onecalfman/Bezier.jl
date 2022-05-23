@@ -15,11 +15,11 @@ bezier(x :: Vector{T}, y :: Vector{S}; range = 0:0.01:1) where {T,S <: Number} =
 
 bezier(x :: AbstractMatrix{T}, y :: AbstractMatrix{S}; range = 0:0.01:1) where {T,S <: Number} = bezier([x y], range = range)
 
-function bezier(x :: AbstractMatrix{T}) where T <: Number
+function bezier(x :: AbstractMatrix{T}, range = 0:0.01:1) where T <: Number
 	if size(x)[2] == 2
-		bezier(vec(x[1,:]),vec(y[2,:]))
+		bezier(vec(x[1,:]),vec(y[2,:]), range = range)
 	elseif size(x)[1] == 2
-		bezier(vec(x[:,]),vec(y[:,2]))
+		bezier(vec(x[:,]),vec(y[:,2]), range = range)
 	else
 		throw(ArgumentError("unsupported matrix dimensions"))
 	end
