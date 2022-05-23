@@ -39,3 +39,13 @@ The number of coordinates is 100 by default, but can be modified with the range 
   plot!(bezier([0,0,1,1],[0,1,-1,0.5], 0:0.2:1))
 ```
 ![example plot](example.svg)
+
+
+```julia
+  using Plots, Bezier
+
+  m = [4 7 5 4 6 5 3; 3 4 -2 4 5 6 0]
+  plot(bezier(m))
+  scatter!(m[1,:],m[2,:])
+```
+![example plot 2](example2.svg)
