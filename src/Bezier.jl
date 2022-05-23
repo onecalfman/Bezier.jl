@@ -16,7 +16,7 @@ bezier(x :: Vector{T}, y :: Vector{S}, range :: StepRangeLen = 0:0.01:1) where {
 bezier(x :: AbstractMatrix{T}, y :: AbstractMatrix{S}, range :: StepRangeLen = 0:0.01:1) where {T,S <: Number} = bezier([x y], range)
 
 function bezier(x :: AbstractMatrix{T}, range = 0:0.01:1) where T <: Number
-	if size(x)[2] == 2
+	if size(x)[2] == 1
 		bezier(vec(x[1,:]),vec(x[2,:]), range)
 	elseif size(x)[1] == 2
 		bezier(vec(x[:,1]),vec(x[:,2]), range)
