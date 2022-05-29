@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="300" height="300" src="docs/assets/logo.svg">
+  <img width="300" height="300" src="docs/src/assets/logo.svg">
 </p>
 
 
@@ -43,7 +43,7 @@ The number of coordinates is 100 by default, but can be modified with the range 
   plot!(bezier([0,0,1,1],[0,1,-1,0.5]))
   plot!(bezier([0,0,1,1],[0,1,-1,0.5], 0:0.2:1))
 ```
-![example plot](docs/assets/example.svg)
+![example plot](docs/src/assets/example.svg)
 
 
 ```julia
@@ -53,4 +53,4 @@ The number of coordinates is 100 by default, but can be modified with the range 
   plot(bezier(m))
   scatter!(m[1,:],m[2,:])
 ```
-![example plot 2](docs/assets/example2.svg)
+![example plot 2](docs/src/assets/example2.svg)
