@@ -1,3 +1,8 @@
+<p align="center">
+  <img width="300" height="300" src="assets/logo.svg">
+</p>
+
+
 # Bezier.jl
 a minimal implementation of nth-degree-Bezier curves in julia
 
@@ -38,7 +43,7 @@ The number of coordinates is 100 by default, but can be modified with the range 
   plot!(bezier([0,0,1,1],[0,1,-1,0.5]))
   plot!(bezier([0,0,1,1],[0,1,-1,0.5], 0:0.2:1))
 ```
-![example plot](example.svg)
+![example plot](assets/example.svg)
 
 
 ```julia
@@ -48,4 +53,4 @@ The number of coordinates is 100 by default, but can be modified with the range 
   plot(bezier(m))
   scatter!(m[1,:],m[2,:])
 ```
-![example plot 2](example2.svg)
+![example plot 2](assets/example2.svg)
