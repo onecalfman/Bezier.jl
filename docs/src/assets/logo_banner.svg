@@ -12,10 +12,11 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:serif="http://www.serif.com/">
   <sodipodi:namedview
      id="namedview7"
-     pagecolor="#ffffff"
+     pagecolor="#3b3b3b"
      bordercolor="#111111"
      borderopacity="1"
      inkscape:pageshadow="0"
@@ -26,9 +27,9 @@
      inkscape:snap-bbox="true"
      inkscape:object-paths="true"
      inkscape:snap-object-midpoints="true"
-     inkscape:zoom="0.36361816"
-     inkscape:cx="2649.7576"
-     inkscape:cy="427.6464"
+     inkscape:zoom="0.51423374"
+     inkscape:cx="2439.5521"
+     inkscape:cy="197.38106"
      inkscape:window-width="3840"
      inkscape:window-height="2095"
      inkscape:window-x="0"
@@ -45,16 +46,15 @@
     <g
        id="g4177">
       <path
-         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:26;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 15.367049,123.65407 C 68.602547,189.925 124.71989,66.199516 176.86373,127.65461"
-         id="path857"
-         sodipodi:nodetypes="cc" />
+         style="color:#000000;fill:#d7d7d7;stroke-linecap:round;fill-opacity:1;stroke:#9a8888;stroke-opacity:1;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 141.74414,97.054687 c -2.18436,0.02717 -4.34507,0.194075 -6.46875,0.498047 -16.98946,2.431779 -31.48926,11.074686 -45.017578,18.517576 -13.528321,7.44289 -26.010992,13.63446 -35.789062,14.58594 -9.77807,0.95148 -17.593153,-0.9859 -28.966797,-15.14453 A 13,13 0 0 0 7.2265625,113.51953 13,13 0 0 0 5.2324219,131.79492 c 15.2440791,18.9768 34.4080231,26.42616 51.7539061,24.73828 17.345884,-1.68788 32.131283,-10.16088 45.804692,-17.68359 13.6734,-7.52271 26.30638,-14.14706 36.16796,-15.55859 9.86159,-1.41154 17.09273,-0.0723 27.99219,12.77343 a 13,13 0 0 0 18.32422,1.50196 13,13 0 0 0 1.5,-18.32227 C 173.49951,103.59761 157.03468,96.864482 141.74414,97.054687 Z"
+         id="path857" />
       <circle
-         style="fill:#4063d8;fill-opacity:1;stroke:none;stroke-width:4.99999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none"
+         style="fill:#657cc6;fill-opacity:1;stroke:#4063d8;stroke-width:2.29058;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="path1336"
          cx="15.367049"
          cy="123.65407"
-         r="13.220783" />
+         r="13.541402" />
       <circle
          style="fill:#9558b2;fill-opacity:1;stroke:none;stroke-width:4.99999;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="circle1562"
@@ -75,15 +75,58 @@
          r="13.220783" />
       <text
          xml:space="preserve"
-         style="font-size:165.137px;line-height:1.25;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Normal';stroke-width:1.20623"
+         style="font-size:165.137px;line-height:1.25;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Normal';stroke-width:2.906;stroke:#f2f2f2;stroke-opacity:1;fill:#000000;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
          x="234.36302"
          y="185.22752"
          id="text9493"><tspan
            sodipodi:role="line"
            id="tspan9491"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:165.137px;font-family:JuliaMono;-inkscape-font-specification:'JuliaMono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.20623"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:165.137px;font-family:JuliaMono;-inkscape-font-specification:'JuliaMono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:2.906;stroke:#f2f2f2;stroke-opacity:1;fill:#000000;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
            x="234.36302"
            y="185.22752">Bezier.jl</tspan></text>
+      <g
+         id="Layer-1"
+         serif:id="Layer 1"
+         transform="matrix(0.25136819,0,0,0.25136819,155.77376,-221.67157)"
+         style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
+        
+        
+        <g
+   transform="matrix(0.749283,0,0,0.749283,-62.845328,547.82818)"
+   id="g28842">
+            <g
+   id="Layer-11"
+   serif:id="Layer 1">
+                <g
+   id="g51">
+                    <circle
+   id="circle18"
+   cx="-378.95114"
+   cy="1454.186"
+   r="73.969734"
+   style="fill:#d66661;stroke:#c93d39;stroke-width:13.4427px;stroke-linejoin:miter;stroke-miterlimit:4" />
+
+                    <circle
+   id="circle22"
+   cx="-81.002853"
+   cy="797.2804"
+   r="72.254311"
+   style="fill:#aa7dc0;stroke:#945bb0;stroke-width:13.131px;stroke-linejoin:miter;stroke-miterlimit:4" />
+
+                    <circle
+   id="circle20"
+   cx="195.84865"
+   cy="1123.569"
+   r="71.353371"
+   style="fill:#6bab5b;stroke:#3b972e;stroke-width:12.9672px;stroke-linejoin:miter;stroke-miterlimit:4" />
+
+                </g>
+
+            </g>
+
+        </g>
+
+    </g>
     </g>
   </g>
 </svg>
