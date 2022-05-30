@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="300" height="300" src="docs/src/assets/logo.svg">
+  <img width="300" height="300" src="https://raw.githubusercontent.com/onecalfman/Bezier.jl/main/docs/src/assets/logo_banner.svg">
 </p>
 
 
