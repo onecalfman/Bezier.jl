@@ -1,6 +1,4 @@
-<p align="center">
-  <img height="300" src="https://raw.githubusercontent.com/onecalfman/Bezier.jl/main/docs/src/assets/logo_banner.svg">
-</p>
+![](https://raw.githubusercontent.com/onecalfman/Bezier.jl/main/docs/src/assets/logo_banner.svg)
 
 
 # Bezier.jl
