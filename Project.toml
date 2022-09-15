@@ -1,7 +1,7 @@
 name = "Bezier"
 uuid = "4ec6fef6-ecd9-481e-97e1-75598c2ab6c2"
 authors = ["Jonas Walkling <jonas@walkling.email>"]
-version = "0.1.7"
+version = "0.20"
 
 [deps]
 Symbolics = "0c5d862f-8b57-4792-8d23-62f2024744c7"
