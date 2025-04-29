@@ -19,16 +19,16 @@ The idea was taken from ["A Primer on Bézier Curves"](https://pomax.github.io/b
 ### Examples
 
 Return two lists with the x and y values for the quadratic bezier curve that
-spans from (0,0) to (1,1) with the controll point (0,1);
+spans from (0,0) to (1,1) with the control point (0,1);
 
 ```julia
-  bezier([0,1,0],[0,1,1])
+  bezier([0,0,1],[0,1,1])
 ```
 
-Return a cubic bezier curve with an added controll point at (0,1):
+Return a cubic bezier curve with an added control point at (1,0):
 
 ```julia
-  bezier([0,0,0,1],[0,1,1,1])
+  bezier([0,0,1,1],[0,1,0,1])
 ```
 
 #### Plotting
